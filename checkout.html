@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Asmuthism</title>
+  <link rel="icon" href="assets/logo-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="checkout-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Asmuthism Home">
+        <img src="assets/logo-icon.png" alt="Asmuthism" class="logo-icon-img">
+        <span class="logo-wordmark"><span class="logo-name">Asmuthism</span></span>
+      </a>
+      <div class="header-actions">
+        <a href="courses.html" class="btn btn-outline btn-sm">Continue Shopping</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="checkout-layout">
+    <div class="container checkout-container">
+      <div class="checkout-steps" id="checkout-steps">
+        <div class="checkout-step active" data-step="1"><span>1</span> Review</div>
+        <div class="checkout-step" data-step="2"><span>2</span> Payment</div>
+        <div class="checkout-step" data-step="3"><span>3</span> Confirmation</div>
+      </div>
+
+      <div class="checkout-grid">
+        <div class="checkout-main">
+          <div id="checkout-step-review" class="checkout-step-panel active">
+            <h1>Review your order</h1>
+            <div id="checkout-items"></div>
+            <button type="button" id="checkout-next-payment" class="btn btn-lime btn-lg" style="margin-top:24px">Continue to Payment →</button>
+          </div>
+
+          <div id="checkout-step-payment" class="checkout-step-panel">
+            <h1>Payment details</h1>
+            <p class="checkout-secure-note">🔒 Secure demo checkout — use test card <strong>4242 4242 4242 4242</strong></p>
+            <form id="checkout-form">
+              <div class="form-group">
+                <label>Cardholder Name</label>
+                <input type="text" name="cardName" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label>Card Number</label>
+                <input type="text" name="cardNumber" placeholder="4242 4242 4242 4242" required maxlength="19">
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label>Expiry (MM/YY)</label>
+                  <input type="text" name="cardExpiry" placeholder="12/28" required maxlength="5">
+                </div>
+                <div class="form-group">
+                  <label>CVV</label>
+                  <input type="text" name="cardCvv" placeholder="123" required maxlength="4">
+                </div>
+              </div>
+              <div class="checkout-pay-actions">
+                <button type="button" id="checkout-back-review" class="btn btn-outline">← Back</button>
+                <button type="submit" class="btn btn-lime btn-lg">Pay Now</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="checkout-step-confirm" class="checkout-step-panel">
+            <div id="checkout-confirmation"></div>
+          </div>
+        </div>
+
+        <aside class="order-summary" id="order-summary">
+          <h3>Order Summary</h3>
+          <div id="order-summary-items"></div>
+          <div class="order-total">
+            <span>Total</span>
+            <span id="order-total">$0</span>
+          </div>
+          <p class="order-note">Lifetime access to all purchased courses.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/course-store.js"></script>
+  <script src="js/platform-settings.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/payments.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

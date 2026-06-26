@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details | Asmuthism</title>
+  <link rel="icon" href="assets/logo-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Asmuthism Home">
+        <img src="assets/logo-icon.png" alt="Asmuthism" class="logo-icon-img">
+        <span class="logo-wordmark"><span class="logo-name">Asmuthism</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="dashboard.html" class="nav-dashboard hidden">Dashboard</a>
+        <a href="admin.html" class="nav-admin hidden">Admin</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#newsletter">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="checkout.html" class="icon-btn cart-link" aria-label="Cart">
+          🛒
+          <span class="cart-count hidden">0</span>
+        </a>
+        <a href="login.html" class="btn btn-outline btn-sm login-link">Log In</a>
+        <a href="register.html" class="btn btn-lime btn-sm get-started-btn">Get Started</a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-backdrop" aria-hidden="true"></div>
+
+  <section class="detail-layout">
+    <div class="container" id="detail-content"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>Copyright © 2026 Asmuthism. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/course-store.js"></script>
+  <script src="js/platform-settings.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/courses.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

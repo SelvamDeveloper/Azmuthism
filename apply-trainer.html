@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply as Trainer | Asmuthism</title>
+  <link rel="icon" href="assets/logo-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-visual">
+      <a href="index.html" class="logo logo--brand logo--light" aria-label="Asmuthism Home">
+        <img src="assets/logo-icon.png" alt="Asmuthism" class="logo-icon-img">
+        <span class="logo-wordmark"><span class="logo-name">Asmuthism</span></span>
+      </a>
+      <h2>Become a Trainer</h2>
+      <p>Share your expertise with thousands of learners. Submit your application — our admin team reviews and creates approved trainer accounts.</p>
+      <p style="margin-top:16px;font-size:0.875rem;opacity:0.85">Demo trainer login: <strong>trainer@asmuthism.com</strong> / demo123</p>
+    </div>
+    <div class="auth-form-wrap">
+      <form class="auth-form" id="trainer-apply-form">
+        <h1>Trainer Application</h1>
+        <p>Tell us about your experience. You cannot create a trainer account directly — admin approval is required.</p>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="expertise">Area of Expertise</label>
+          <input type="text" id="expertise" name="expertise" placeholder="e.g. 3D Printing, Business Strategy" required>
+        </div>
+        <div class="form-group">
+          <label for="experience">Years of Experience</label>
+          <input type="text" id="experience" name="experience" placeholder="e.g. 5+ years">
+        </div>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn / Portfolio (optional)</label>
+          <input type="url" id="linkedin" name="linkedin" placeholder="https://">
+        </div>
+        <div class="form-group">
+          <label for="bio">Why do you want to teach on Asmuthism?</label>
+          <textarea id="bio" name="bio" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lime btn-lg">Submit Application</button>
+        <p class="auth-switch">Want to learn instead? <a href="register.html">Create student account</a> · <a href="login.html?demo=trainer">Try trainer demo</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/trainer-applications.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById("trainer-apply-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const result = submitTrainerApplication({
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        expertise: form.expertise.value,
+        experience: form.experience.value,
+        linkedin: form.linkedin.value,
+        bio: form.bio.value,
+      });
+      if (result.error) {
+        showAlert(form, result.error);
+        return;
+      }
+      form.innerHTML = `
+        <div class="apply-success">
+          <div class="dash-empty-icon">✅</div>
+          <h1>Application Submitted!</h1>
+          <p>Thank you, ${result.application.name}. Our admin team will review your application and contact you at <strong>${result.application.email}</strong>.</p>
+          <a href="index.html" class="btn btn-lime btn-lg" style="margin-top:24px">Back to Home</a>
+        </div>`;
+    });
+  </script>
+</body>
+</html>

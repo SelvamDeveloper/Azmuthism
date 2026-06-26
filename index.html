@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asmuthism — Master the Growth Journey</title>
+  <link rel="icon" href="assets/logo-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="announcement-bar" class="announcement-bar hidden"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo logo--brand" aria-label="Asmuthism Home">
+        <img src="assets/logo-icon.png" alt="Asmuthism" class="logo-icon-img">
+        <span class="logo-wordmark"><span class="logo-name">Asmuthism</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html" class="nav-dashboard hidden">Dashboard</a>
+        <a href="admin.html" class="nav-admin hidden">Admin</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="checkout.html" class="icon-btn cart-link" aria-label="Cart">
+          🛒
+          <span class="cart-count hidden">0</span>
+        </a>
+        <a href="login.html" class="btn btn-outline btn-sm login-link">Log In</a>
+        <a href="register.html" class="btn btn-lime btn-sm get-started-btn">Get Started</a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-backdrop" aria-hidden="true"></div>
+
+  <section class="hero">
+    <div class="hero-bg-layers" aria-hidden="true">
+      <div class="hero-layer hero-layer-1" data-parallax="0.35"></div>
+      <div class="hero-layer hero-layer-2" data-parallax="0.2"></div>
+      <div class="hero-layer hero-layer-3" data-parallax="0.1"></div>
+    </div>
+    <div class="container hero-content">
+      <h1 class="reveal" data-setting="heroTitle">Find Your Next Skill Here<br>Our Open Courses</h1>
+      <p class="reveal reveal-delay-1" data-setting="heroSubtitle">Explore our open courses to find programs that align with your interests and expertise. From entry-level basics to advanced mastery in 3D printing, business, development, and investment.</p>
+      <div class="hero-actions reveal reveal-delay-2">
+        <a href="courses.html" class="btn btn-lime btn-lg">Browse Courses ↗</a>
+        <a href="register.html" class="btn btn-white btn-lg">Start Learning Now</a>
+        <a href="login.html?demo=1" class="btn btn-outline btn-lg hero-demo-btn">Try Demo ↗</a>
+      </div>
+      <div class="hero-avatars reveal reveal-delay-3">
+        <div class="avatar-item">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80" alt="3D Printing">
+          <span class="avatar-tag tag-green">3D Printing</span>
+        </div>
+        <div class="avatar-item">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80" alt="Business">
+          <span class="avatar-tag tag-cyan">Business</span>
+        </div>
+        <div class="avatar-item">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Development">
+          <span class="avatar-tag tag-yellow">Development</span>
+        </div>
+        <div class="avatar-item">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&q=80" alt="Investment">
+          <span class="avatar-tag tag-orange">Investment</span>
+        </div>
+        <div class="avatar-item">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80" alt="Marketing">
+          <span class="avatar-tag tag-purple">Marketing</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </section>
+
+  <section class="partners-bar reveal reveal-scale">
+    <div class="container">
+      <div class="partners-inner">
+        <span class="partner-logo">THE TELEGRAPH</span>
+        <span class="partner-logo">WARNER BROS.</span>
+        <span class="partner-logo">NET-A-PORTER</span>
+        <span class="partner-logo">BRANDSTUDIO</span>
+        <span class="partner-logo">HIGHSNOBIETY</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal reveal-left">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80" alt="Online learning">
+        <button class="video-play">▶ Watch Video</button>
+      </div>
+      <div class="reveal reveal-right">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">The Leading Online Learning Platform</h2>
+        <p class="section-subtitle">Master the Growth Journey — expert-led courses in 3D printing, business, development, investment, and more.</p>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Expert-led courses with real-world projects and hands-on assignments</li>
+          <li><span class="check">✓</span> Scalable learning paths from beginner to advanced with certificates</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal reveal-delay-1"><h3 data-count="50k+">50k+</h3><p>Active Learners</p></div>
+        <div class="stat-card reveal reveal-delay-2"><h3 data-count="92%">92%</h3><p>Course Completion Rate</p></div>
+        <div class="stat-card reveal reveal-delay-3"><h3 data-count="120k+">120k+</h3><p>Courses Enrolled</p></div>
+        <div class="stat-card reveal reveal-delay-4"><h3 data-count="48k+">48k+</h3><p>Satisfied Students</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap reveal">
+    <div class="marquee-banner">
+      <div class="marquee-track">
+        <span>3D Printing</span><span>Business</span><span>Development</span><span>Investment</span><span>Design</span><span>Marketing</span>
+        <span>3D Printing</span><span>Business</span><span>Development</span><span>Investment</span><span>Design</span><span>Marketing</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="why-section">
+    <div class="container text-center">
+      <span class="section-tag reveal">Why Us</span>
+      <h2 class="section-title reveal">Why Choose Us</h2>
+      <p class="section-subtitle reveal reveal-delay-1">We provide the tools, content, and community you need to succeed in today's competitive job market.</p>
+      <div class="cards-grid-3">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">⭐</div>
+          <h3>Expert Instructors</h3>
+          <p>Learn from industry professionals with years of real-world experience in their fields.</p>
+          <a href="courses.html" class="learn-more">Learn More →</a>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🛡️</div>
+          <h3>Certified Programs</h3>
+          <p>Earn recognized certificates upon completion to boost your resume and career prospects.</p>
+          <a href="courses.html" class="learn-more">Learn More →</a>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">📊</div>
+          <h3>Track Progress</h3>
+          <p>Monitor your learning journey with detailed progress tracking and personalized dashboards.</p>
+          <a href="dashboard.html" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dual-cta reveal">
+    <div class="container">
+      <span class="section-tag reveal" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.8)">Categories</span>
+      <h2 class="section-title reveal">Start Your Learning Journey</h2>
+      <div class="dual-cards">
+        <div class="dual-card reveal reveal-delay-1">
+          <h3>For Students</h3>
+          <p>Access hundreds of courses across technology, business, and creative fields. Learn at your own pace.</p>
+          <a href="courses.html" class="btn btn-lime">Browse Courses</a>
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Students learning">
+        </div>
+        <div class="dual-card reveal reveal-delay-2">
+          <h3>For Instructors</h3>
+          <p>Share your expertise with a global audience. Publish courses and grow your education business.</p>
+          <a href="apply-trainer.html" class="btn btn-lime">Become Instructor</a>
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Instructor teaching">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories-section" id="categories">
+    <div class="container text-center">
+      <span class="section-tag">Categories</span>
+      <h2 class="section-title">Course Categories</h2>
+      <p class="section-subtitle">Browse courses by category and find the perfect program for your goals.</p>
+      <div class="categories-grid" id="home-categories"></div>
+      <div class="view-all-wrap">
+        <a href="courses.html" class="btn btn-lime">View All Categories</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section reveal">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);display:block;text-align:center">Process</span>
+      <h2 class="section-title">How It Works</h2>
+      <div class="tab-toggle">
+        <button class="tab-btn active" data-tab="student">For Students</button>
+        <button class="tab-btn" data-tab="business">For Instructors</button>
+      </div>
+      <div class="steps-grid" id="steps-grid"></div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container text-center">
+      <span class="section-tag">Team</span>
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;background:var(--gray-50)">
+    <div class="container text-center">
+      <span class="section-tag">Featured</span>
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="courses-grid" id="featured-courses" style="margin-top:48px"></div>
+      <div class="view-all-wrap">
+        <a href="courses.html" class="btn btn-lime">View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <h2 class="section-title">Subscribe Newsletter</h2>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Email Address" required>
+        <button type="submit" class="btn btn-lime">Subscribe</button>
+      </form>
+      <p class="newsletter-note">You can unsubscribe at any time.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo--brand" aria-label="Asmuthism Home">
+            <img src="assets/logo-icon.png" alt="Asmuthism" class="logo-icon-img">
+        <span class="logo-wordmark"><span class="logo-name">Asmuthism</span></span>
+          </a>
+          <p>Empowering learners worldwide with expert-led courses in technology, business, and creative skills.</p>
+          <div class="app-buttons">
+            <span class="app-btn">Download on the App Store</span>
+            <span class="app-btn">GET IT ON Google Play</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>For Students</h5>
+          <a href="courses.html">Browse Courses</a>
+          <a href="dashboard.html">My Dashboard</a>
+          <a href="courses.html?category=development">Development</a>
+          <a href="courses.html?category=business">Business</a>
+          <a href="login.html">Log In</a>
+        </div>
+        <div class="footer-col">
+          <h5>For Instructors</h5>
+          <a href="apply-trainer.html">Become Instructor</a>
+          <a href="#">Upload Course</a>
+          <a href="#">Instructor Dashboard</a>
+          <a href="#">Revenue Share</a>
+          <a href="#">Teaching Resources</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="index.html#about">About</a>
+          <a href="#newsletter">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Help & Support</h5>
+          <a href="#">Contact</a>
+          <a href="#">FAQ's</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Help Center</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Asmuthism. All rights reserved.</p>
+        <div class="social-links">
+          <span>Follow Us On:</span>
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">t</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">🌐</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/course-store.js"></script>
+  <script src="js/platform-settings.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/courses.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
